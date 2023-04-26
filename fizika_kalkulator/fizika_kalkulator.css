@@ -218,3 +218,69 @@ table {
         scale: 2.8;
         cursor: pointer;
     }
+
+    #reset:hover{
+        background-color: #e9efef49;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+@media (max-width: 890px) {
+  h1, h2{
+    font-size: 1.6rem;
+  }
+  .vnos-ocen{
+    width: 100%;
+    scale: 0.8;
+  }
+.gumbek_povprecni_div{
+    width: 100%;
+    margin: 15px;
+    flex-direction: column;}
+  .prikaz-povprecja{
+    width: 100%;
+    scale: 0.8;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+  }
+  .gumbi_tabela{
+    font-size: large;
+  }
+
+
+
+
+}
+
+@media (max-width: 530px) {
+  h1, h2{
+    font-size: 1.4rem;
+  }
+  .vnos-ocen{
+    width: 100%;
+    scale: 0.55;
+    padding: 0%;
+    margin: 0%;
+  }
+.gumbek_povprecni_div{
+    width: 100%;
+    margin: 15px;
+    flex-direction: column;}
+  .prikaz-povprecja{
+    width: 100%;
+    scale: 0.8;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+  }
+  .gumbi_tabela{
+    font-size: medium;
+  }
+
+
+
+
+
+
+}

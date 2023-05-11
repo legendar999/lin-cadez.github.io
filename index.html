@@ -30,6 +30,41 @@
                 <li class="link-button"><a href="/music.html">Music Visualizer</a></li>
             </ul>
         </header>
+        <style>
+            .wrapper {
+  height: 100vh;
+  color: aliceblue;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 24ch;
+  animation: typing 2s steps(24), blink .8s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid;
+  border-radius: 0%;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+        </style>
+        <div class="wrapper">
+            <div class="typing-demo">Dobrodošel na spaces.tk</div>
+        </div>
     </div>
 </body>
 

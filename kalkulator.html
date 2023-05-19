@@ -37,7 +37,7 @@
 
 
     </div>
-
+    <br>
     <div class="prikaz-ocen">
         <table id="grade_display">
             <th><button class="gumbi_tabela" id="ustne" onclick="ustni_vnos()">Ustne ocene</button></th>
@@ -48,14 +48,14 @@
         </table>
         <div class="prikaz-povprecja">
             <div class="gumbek_povprecni_div">
-                <button id="gumbek_povprecje"onclick="povprecje()">Izračunaj povprečje<span id="delec" class="material-symbols-rounded">magic_button</span></button>
+                <button id="gumbek_povprecje" onclick="povprecje()">Izračunaj povprečje<span id="delec" class="material-symbols-rounded">magic_button</span></button>
             </div>
-            <div class="gumbek_povprecni_div"style="display: flex; flex-direction: row;">
-            <h2>Povprečje: </h2>
-            <h2 id="povprecje"></h2>
+            <div class="gumbek_povprecni_div povprecje_display" style="display: flex; flex-direction: row;">
+            <h2 class="povprecje_display">Povprečje: </h2>
+            <h2 class="povprecje_display " id="povprecje"> </h2>
         </div>
         <div class="gumbek_povprecni_div">
-            <button id="gumbek_povprecje"onclick="refreshPage()"><h2>Resetiraj</h2><span id="reset" class="material-symbols-rounded">
+            <button id="gumbek_povprecje" onclick="refreshPage()"><h2>Resetiraj</h2><span id="reset" class="material-symbols-rounded">
                 restart_alt
                 </span></button>
         </div>
@@ -68,6 +68,7 @@
 
 
 </div>
+<br><br>
 
 </body>
 </html>

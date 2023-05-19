@@ -3,7 +3,7 @@ var ocena = 0;
 let ocene_pisne = [];
 let ocene_ustne = [];
 let ocene_tabla = [];
-
+let active = 0;
 
 
 function dodaj_oceno(){
@@ -102,15 +102,40 @@ function set_ocena_5(){
 }
 
 function ustni_vnos(){
+    default_button("pisne");
+    default_button("tabla");
+    active_button("ustne");
     vrsta_ocene=0;
 
 }
 function pisni_vnos(){
+    active_button("pisne");
+    default_button("tabla");
+    default_button("ustne");
     vrsta_ocene=1;
 }
 function tabla_vnos(){
+    default_button("pisne");
+    active_button("tabla");
+    default_button("ustne");
     vrsta_ocene=2;
 }
+
+function default_button(button_id){
+    const status = document.getElementById(button_id);
+    status.style.backgroundColor = "#e9efef00";
+    status.style.borderRadius = "10px";
+    status.style.cursor = "pointer";
+    return;
+}
+function active_button(button_id){
+    const status = document.getElementById(button_id);
+    status.style.backgroundColor = "#e9efef49";
+    status.style.borderRadius = "10px";
+    status.style.cursor = "default";
+    return;
+}
+
 
 function sumArrays(arr1, arr2, arr3) {
     let sum = 0;
@@ -151,7 +176,7 @@ function povprecje(){
     let final_izracun = sestevek_ocen_s_tockami/sestevek_ocen;
     final_izracun = Math.round(final_izracun * 100) / 100;
     var povprecje_text=document.getElementById("povprecje");
-    povprecje_text.innerHTML="   "+final_izracun;
+    povprecje_text.innerHTML="&nbsp;"+final_izracun;
     
 }
 

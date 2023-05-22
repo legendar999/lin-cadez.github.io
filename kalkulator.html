@@ -27,6 +27,7 @@
         <h2>Vnesi vse ocene</h2>
         <hr class="rounded">
 
+<<<<<<< HEAD
         <div class="vnos-ocen">
             <button class="ikone" onclick="set_ocena_1()"><span
                     class="material-symbols-rounded">counter_1</span></button>
@@ -61,6 +62,37 @@
                     </button>
                 </div>
             </div>
+=======
+    <div class="vnos-ocen">
+        
+        
+        <button class="ikone" onclick="set_ocena_1()"><span class="material-symbols-rounded">counter_1</span></button>
+        <button class="ikone" onclick="set_ocena_2()"><span class="material-symbols-rounded">counter_2</span></button>
+        <button class="ikone" onclick="set_ocena_3()"><span class="material-symbols-rounded">counter_3</span></button>
+        <button class="ikone" onclick="set_ocena_4()"><span class="material-symbols-rounded">counter_4</span></button>
+        <button class="ikone" onclick="set_ocena_5()" ><span class="material-symbols-rounded">counter_5</span></button>
+        
+
+
+    </div>
+    <br>
+    <div class="prikaz-ocen">
+        <table id="grade_display">
+            <thead>
+            <th><button class="gumbi_tabela" id="ustne" onclick="ustni_vnos()">Ustne ocene</button></th>
+            <th><button class="gumbi_tabela"  id="pisne" onclick="pisni_vnos()">Pisne ocene</button></th>
+            <th><button class="gumbi_tabela"  id="tabla" onclick="tabla_vnos()">Naloge pred tablo</button></th>
+        </thead>
+
+        </table>
+        <div class="prikaz-povprecja">
+            <div class="gumbek_povprecni_div">
+                <button id="gumbek_povprecje" onclick="povprecje()">Izračunaj povprečje<span id="delec" class="material-symbols-rounded">magic_button</span></button>
+            </div>
+            <div class="povprecje_display" style="display: flex; flex-direction: row;">
+            <h2>Povprečje: </h2>
+            <h2 id="povprecje" style="display:none"> </h2>
+>>>>>>> kalk
         </div>
     </div>
     <br><br>

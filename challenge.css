@@ -1,0 +1,99 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+main{
+    align-self: center;
+    margin: 0px auto;
+    padding: 10px;
+    width: 80%;
+}
+
+#background-video {
+    opacity: 0.34;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  h1,h2, h3, a,p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 4.3rem;
+    margin-top: 2%; 
+  }
+  
+  h2 {
+    font-size: 2.4rem; 
+    text-align: left;
+    }
+    h3 {
+      font-size: 1.8rem;
+    }
+
+
+article{
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+    .circle-element{
+        margin: 20px;
+        height: 160px;
+        width: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 50%;
+        flex-direction: column;
+
+    }
+
+.circle-text{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    margin-bottom: -10px;
+}
+
+.circle-text-small{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+@media only screen and (max-width: 1400px) {
+    h1 {
+      font-size: 3.3rem;
+      margin-top: 10%;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+    body{
+        overflow:scroll;
+    }
+  }
+  

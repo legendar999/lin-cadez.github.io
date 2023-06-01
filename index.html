@@ -22,7 +22,7 @@
         <script>loading_screen();</script>
 
         <div class="content-container" style="display: none;">
-            <header style="align-items: center;">
+            <header style="align-items: center;" id="top">
                 <ul class="links">
                     <li class="link-button"><a href="#sola">Šola</a></li>
                     <li class="link-button"><a href="#map">Zemljevid cerkev</a></li>
@@ -117,15 +117,21 @@
             <h1 id="music">Music Visualizer</h1>
             <hr>
             <div class="music-vsebina">
-                <div class="content-item" onclick="window.location.href='music.html'">
+                <div class="content-item" onclick="window.location.href='bars.html'">
                     <img src="images/bars.jpg" alt="Music">
+                    <h1>Bars</h1>
                 </div>
-                <div class="content-item" onclick="window.location.href='music.html'">
+                <div class="content-item" onclick="window.location.href='bubble_riser.html'">
                     <img src="images/racka.jpg" alt="Music">
+                    <h1>Bubble riser</h1>
                 </div>
             </div>
         </div>
+        <div class="up" onclick="window.location.href='#top'">
+            <a>^</a>
+        </div>
     </div>
+    <footer>(c) Jaka</footer>
 </body>
 
 </html>

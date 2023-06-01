@@ -34,8 +34,6 @@
   }
 
   .content-item:hover {
-    scale: 1.1;
-    transition: 0.5s;
     cursor: pointer;
   }
 
@@ -106,8 +104,6 @@
     justify-content: center;
     margin: 0 auto;
     width: fit-content;
-
-
   }
 
   @media (max-width: 768px) {

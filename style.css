@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 * {
   box-sizing: border-box;
   border-end-end-radius: 13px;
@@ -11,24 +15,24 @@
 body {
   background-color: rgb(61, 61, 61);
   font-family: 'Montserrat';
-  
 }
 
 .fullscreen {
   position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  width: 100vw; 
-  height: 100vh; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
 }
+
 .center-text {
   position: absolute;
   text-align: center;
   font-size: 2rem;
-  width: 100%; 
+  width: 100%;
   top: 50%;
-  left: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -36,65 +40,12 @@ body {
 .text {
   width: 100%;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   text-align: center;
   color: #ffffff;
   font-family: monospace;
   font-size: 6vmin;
-
-
-}
-
-/* Set the background color of the gallery container to black */
-.gallery-container {
-  background-color: black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* Style the gallery images */
-.gallery-image {
-  width: 20%; /* Set the width of the images to be 20% of the container */
-  margin: 5px;
-  border: 2px solid green;
-}
-
-/* Style the loading screen */
-.loading-screen {
-  position: fixed; /* Position the loading screen in the center of the screen */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gallery-container {
-  background-color: black;
-  display: flex;
-
-}
-
-/* Style the gallery elements */
-.gallery-element {
-  background-color: green;
-  color: white;
-  font-size: 16px;
-  padding: 10px 20px;
-  border: none;
-  margin: 10px;
-  transition: all 0.2s ease;
-}
-
-/* Add styles for when the gallery elements are hovered over */
-.gallery-element:hover {
-  transform: scale(1.05);
-  opacity: 0.8;
-  cursor: pointer;
 }
 
 .center {
@@ -104,7 +55,7 @@ body {
   width: 30%;
 }
 
-.naslov{
+.naslov {
   top: 0;
   bottom: 0;
   left: 0;
@@ -114,9 +65,10 @@ body {
   font-family: monospace;
   font-size: 3vmin;
 }
-.mapa{
+
+.mapa {
   width: 90%;
-  height: 90%;  
+  height: 90%;
   top: 0;
   bottom: 0;
   left: 0;
@@ -125,19 +77,24 @@ body {
   margin-top: 22px;
   margin-bottom: 22px;
 }
+
 #source-code-modal {
   display: none;
   position: fixed;
   z-index: 999;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%); /* centers the modal on the screen */
-  width: 80%; /* adjust as desired */
-  height: 19%; /* adjust as desired */
+  transform: translate(-50%, -50%);
+  /* centers the modal on the screen */
+  width: 80%;
+  /* adjust as desired */
+  height: 19%;
+  /* adjust as desired */
   background-color: white;
   border: 1px solid black;
   box-shadow: 10px 10px 5px #888888;
-  overflow: auto; /* enables scrollbars if content overflows */
+  overflow: auto;
+  /* enables scrollbars if content overflows */
 }
 
 .close {
@@ -156,9 +113,9 @@ body {
   z-index: 0;
 }
 
-.spodaj{
+.spodaj {
   position: relative;
-align-items: center;
+  align-items: center;
   left: 0;
   right: 0;
   text-align: center;
@@ -167,10 +124,10 @@ align-items: center;
   font-size: 2.5vmin;
 
   padding-bottom: 10px;
- 
+
 }
 
-header{
+header {
   height: 80px;
   width: 100%;
   background-color: rgb(109, 109, 109);
@@ -181,14 +138,16 @@ header{
   justify-content: center;
   align-items: center;
 }
-header .links{
+
+header .links {
   height: 80px;
   display: flex;
   align-items: center;
   width: fit-content;
   width: 50%;
 }
-header ul li{
+
+header ul li {
   list-style: none;
   display: flex;
   text-align: center;
@@ -197,7 +156,8 @@ header ul li{
   width: fit-content;
   text-decoration: none;
 }
-header ul li a{
+
+header ul li a {
   font-size: large;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
@@ -205,15 +165,19 @@ header ul li a{
   color: #ffffff;
 
 }
-.link-button:hover{
-  background-color: rgb(61, 61, 61); 
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 20px, rgba(0, 0, 0, 0.22) 0px 6px 4px; 
-  scale: 0.9;
-  transition: 0.2s;
 
+.link-button:hover {
+  background-color: rgb(61, 61, 61);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 20px, rgba(0, 0, 0, 0.22) 0px 6px 4px;
+  scale: 0.9;
+  transition: 0.3s;
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-h2{
+h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   color: #ffffff;
@@ -226,7 +190,8 @@ h2{
   align-items: center;
   justify-content: center;
 }
-h1{
+
+h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   color: #ffffff;
@@ -238,4 +203,51 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 380px;
+  }
+
+  header .links {
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: -14rem;
+  }
+
+  header .links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  header ul li {
+    padding: 1rem 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  header ul li a {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    width: 100%;
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    width: 100%;
+    height: 40px;
+  }
 }

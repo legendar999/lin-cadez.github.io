@@ -371,6 +371,41 @@ h1 {
   z-index: 99;
 }
 
+@media screen and (max-width: 768px) {
+  .sola-vsebina {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    padding: 20px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    place-items: center;
+  }
+
+  .music-vsebina {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    padding: 20px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    place-items: center;
+  }
+
+  .music-vsebina .content-item {
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin-top: 80px;
+  }
+}
+
 .up:hover {
   background-color: rgb(61, 61, 61);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 20px, rgba(0, 0, 0, 0.22) 0px 6px 4px;

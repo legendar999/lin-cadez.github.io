@@ -289,7 +289,7 @@ button:hover {
   cursor: pointer;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 970px) {
 
   h1,
   h2 {
@@ -320,7 +320,11 @@ button:hover {
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 560px) {
+  .povprecje_display{
+    box-shadow: none;
+  }
+
 
   h1,
   h2 {
@@ -329,7 +333,7 @@ button:hover {
 
   .vnos-ocen {
     width: 100%;
-    scale: 0.55;
+    scale: 0.8;
     padding: 0%;
     margin: 0%;
   }

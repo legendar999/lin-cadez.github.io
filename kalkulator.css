@@ -25,17 +25,12 @@ h2 {
 
 
 
-<<<<<<< HEAD
-body {
-  background: #093b54;
-=======
 
 body{
     background: #093b54;
 
     
 
->>>>>>> kalk
 }
 
 
@@ -186,35 +181,6 @@ tr {
   margin: 30px;
 }
 
-<<<<<<< HEAD
-.gumbek_povprecni_div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
-  width: min-content;
-  margin-right: 40px;
-  height: 70px;
-  padding: 10px;
-  border-radius: 10px;
-  border-color: #e9efef;
-  border-width: 8px;
-  border-style: solid;
-  margin-top: 40px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-
-.gumbek_povprecni_div:hover {
-  background-color: #e9efef49;
-  border-radius: 10px;
-}
-
-.povprecje_display {
-  color: #e9efef;
-  border: 1px solid #e9efef;
-}
-=======
   #gumbek_povprecje{
     text-align: center;
     font-weight: bold;
@@ -307,15 +273,6 @@ tr {
     align-items: center;
     align-self: center;
     justify-content: center;
->>>>>>> kalk
-
-.prikaz-povprecja {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
-
   width: 100%;
   padding: 10px;
   padding-top: 15px;
@@ -351,11 +308,7 @@ button:hover {
     flex-direction: column;
   }
 
-<<<<<<< HEAD
-  .prikaz-povprecja {
-=======
   .prikaz-povprecja{
->>>>>>> kalk
     width: 100%;
     scale: 0.8;
     padding: 0;

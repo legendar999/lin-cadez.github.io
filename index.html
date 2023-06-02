@@ -14,62 +14,51 @@
 </head>
 
 <body oncontextmenu="return false">
-    <div>
-        <div class="loading-screen">
-            <div id="loading" class="text"></div>
-        </div>
-
-        <script>loading_screen();</script>
-
-        <div class="content-container" style="display: none;">
-            <header id="top">
-                <div class="logo">
-                    <img src="ikona.ico" alt="logo">
-                </div>
-                <div class="nav">
-                    <ul>
-                        <li><a href="#sola">Šola</a></li>
-                        <li><a href="#map">Zemljevid cerkev</a></li>
-                        <li><a href="#testi">Testi</a></li>
-                        <li><a href="#music">Music Visualizer</a></li>
-                    </ul>
-                </div>
-            </header>
-            <style>
-                .wrapper {
-                    height: 100vh;
-                    color: aliceblue;
-                    /*This part is important for centering*/
-                    display: grid;
-                    place-items: center;
-                }
-
-                .typing-demo {
-                    width: 24ch;
-                    animation: typing 2s steps(24), blink .8s step-end infinite alternate;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    border-right: 4px solid;
-                    border-radius: 0%;
-                    font-family: monospace;
-                    font-size: 2em;
-                }
-
-                @keyframes typing {
-                    from {
-                        width: 0
-                    }
-                }
-
-                @keyframes blink {
-                    50% {
-                        border-color: transparent
-                    }
-                }
-            </style>
-            <div class="wrapper">
-                <div class="typing-demo">Dobrodošel na spaces.tk</div>
+    <div class="content-container">
+        <div class="navbar">
+            <div class="nav-items">
+                <ul>
+                    <li><a href="#sola">Šola</a></li>
+                    <li><a href="#map">Zemljevid</a></li>
+                    <li><a href="#testi">Testi</a></li>
+                    <li><a href="#music">Music</a></li>
+                </ul>
             </div>
+        </div>
+        <style>
+            .wrapper {
+                height: 100vh;
+                color: aliceblue;
+                /*This part is important for centering*/
+                display: grid;
+                place-items: center;
+            }
+
+            .typing-demo {
+                width: 24ch;
+                animation: typing 2s steps(24), blink .8s step-end infinite alternate;
+                white-space: nowrap;
+                overflow: hidden;
+                border-right: 4px solid;
+                border-radius: 0%;
+                font-family: monospace;
+                font-size: 2em;
+            }
+
+            @keyframes typing {
+                from {
+                    width: 0
+                }
+            }
+
+            @keyframes blink {
+                50% {
+                    border-color: transparent
+                }
+            }
+        </style>
+        <div class="wrapper">
+            <div class="typing-demo">Dobrodošel na spaces.tk!</div>
         </div>
     </div>
     <div class="vsebina">
@@ -104,6 +93,7 @@
             <hr>
             <div class="map-vsebina">
                 <div class="content-item" onclick="window.location.href='map.html'">
+                    <a href="">Zemljevid</a>
                     <img src="images/map.png" alt="Zemljevid">
                 </div>
             </div>

@@ -8,6 +8,8 @@
     <title>Kalkulator ocen za fiziko</title>
     <link rel="stylesheet" href="kalkulator.css">
     <script src="kalkulator.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +23,13 @@
 </head>
 
 <body style="overflow-x: hidden;">
-
+    <div id="visits">...</div>
+    <script>
+        function cb(response) {
+            document.getElementById('visits').innerText = response.value;
+        }
+        </script>
+        <script async src="https://api.countapi.xyz/hit/spaces.tk/visits?callback=cb"></script>
     <div class="fake-body">
         <h1>Kalkulator ocen za fiziko</h1>
         <h2>Vnesi vse ocene</h2>

@@ -1,3 +1,6 @@
+
+
+
 let vrsta_ocene = 0;
 var ocena = 0;
 let ocene_pisne = [];

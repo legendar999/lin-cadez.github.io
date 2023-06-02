@@ -14,58 +14,130 @@
 </head>
 
 <body oncontextmenu="return false">
-    <div class="loading-screen">
-        <div id="loading" class="text"></div>
-    </div>
+    <div>
+        <div class="loading-screen">
+            <div id="loading" class="text"></div>
+        </div>
 
-    <script>loading_screen();</script>
+        <script>loading_screen();</script>
 
-    <div class="content-container" style="display: none;">
-
-        <header style="align-items: center;">
-            <ul class="links">
-                <li class="link-button"><a href="sola.html">Šola</a></li>
-                <li class="link-button"><a href="map.html">Zemljevid cerkev</a></li>
-                <li class="link-button"><a href="testi.html">Upcoming Testi</a></li>
-                <li class="link-button"><a href="music.html">Music Visualizer</a></li>
-            </ul>
-        </header>
-        <style>
-            .wrapper {
-                height: 100vh;
-                color: aliceblue;
-                /*This part is important for centering*/
-                display: grid;
-                place-items: center;
-            }
-
-            .typing-demo {
-                width: 24ch;
-                animation: typing 2s steps(24), blink .8s step-end infinite alternate;
-                white-space: nowrap;
-                overflow: hidden;
-                border-right: 4px solid;
-                border-radius: 0%;
-                font-family: monospace;
-                font-size: 2em;
-            }
-
-            @keyframes typing {
-                from {
-                    width: 0
+        <div class="content-container" style="display: none;">
+            <header id="top">
+                <div class="logo">
+                    <img src="ikona.ico" alt="logo">
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#sola">Šola</a></li>
+                        <li><a href="#map">Zemljevid cerkev</a></li>
+                        <li><a href="#testi">Testi</a></li>
+                        <li><a href="#music">Music Visualizer</a></li>
+                    </ul>
+                </div>
+            </header>
+            <style>
+                .wrapper {
+                    height: 100vh;
+                    color: aliceblue;
+                    /*This part is important for centering*/
+                    display: grid;
+                    place-items: center;
                 }
-            }
 
-            @keyframes blink {
-                50% {
-                    border-color: transparent
+                .typing-demo {
+                    width: 24ch;
+                    animation: typing 2s steps(24), blink .8s step-end infinite alternate;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    border-right: 4px solid;
+                    border-radius: 0%;
+                    font-family: monospace;
+                    font-size: 2em;
                 }
-            }
-        </style>
-        <div class="wrapper">
-            <div class="typing-demo">Dobrodošel na spaces.tk</div>
+
+                @keyframes typing {
+                    from {
+                        width: 0
+                    }
+                }
+
+                @keyframes blink {
+                    50% {
+                        border-color: transparent
+                    }
+                }
+            </style>
+            <div class="wrapper">
+                <div class="typing-demo">Dobrodošel na spaces.tk</div>
+            </div>
         </div>
     </div>
+    <div class="vsebina">
+        <div class="sola">
+            <h1 id="sola">Šola</h1>
+            <hr>
+            <div class="sola-vsebina">
+                <div class="content-item" onclick="window.location.href='antigona.html'">
+                    <a href="antigona.html">Antigona</a>
+                    <img src="images/ANTIGONA Sofokles.jpg" alt="">
+                </div>
+                <div class="content-item" onclick="window.location.href='kalkulator.html'">
+                    <a href="kalkulator.html">Fizika kalkulator</a>
+                    <img src="images/calculator.png" alt="">
+                </div>
+                <div class="content-item" onclick="window.location.href='kemija.html'">
+                    <a href="kemija.html">Kemija zapiski</a>
+                    <img src="images/test_slika.jpg" alt="">
+                </div>
+                <div class="content-item" onclick="window.location.href='formule-kemija.html'">
+                    <a href="formule-kemija.html">Kemijske formule</a>
+                    <img src="images/formule.jpg" alt="">
+                </div>
+                <div class="content-item" onclick="window.location.href='sprasevanje-knjizevnost.html'">
+                    <a href="sprasevanje-knjizevnost.html">Književnost zapiski</a>
+                    <img src="images/slo.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="map" style="margin-top: 80px;">
+            <h1 id="map">Zemljevid cerkva</h1>
+            <hr>
+            <div class="map-vsebina">
+                <div class="content-item" onclick="window.location.href='map.html'">
+                    <img src="images/map.png" alt="Zemljevid">
+                </div>
+            </div>
+        </div>
+        <div class="testi" style="margin-top: 80px;">
+            <h1 id="testi">Upcoming Testi</h1>
+            <hr>
+            <div class="testi-vsebina">
+                <div class="content-item" onclick="window.location.href='testi.html'">
+                    <img src="images/testi.jpg" alt="Testi">
+                    <a href="">trenutno jih ni</a>
+                </div>
+            </div>
+        </div>
+        <div class="music" style="margin-top: 80px;">
+            <h1 id="music">Music Visualizer</h1>
+            <hr>
+            <div class="music-vsebina">
+                <div class="content-item" onclick="window.location.href='bars.html'">
+                    <a>Bars</a>
+                    <br>
+                    <img src="images/bars.jpg" alt="Music">
+                </div>
+                <div class="content-item" onclick="window.location.href='bubble_riser.html'">
+                    <a>Bubble riser</a>
+                    <img src="images/racka.jpg" alt="Music">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="up" onclick="window.location.href='#top'">
+        <a>^</a>
+    </div>
+    <footer>(c) Jaka</footer>
 </body>
 
 </html>

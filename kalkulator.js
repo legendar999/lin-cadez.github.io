@@ -168,9 +168,8 @@ function povprecje() {
     console.log(sestevek_ocen);
     let final_izracun = sestevek_ocen_s_tockami / sestevek_ocen;
     final_izracun = Math.round(final_izracun * 100) / 100;
-    var povprecje_text=document.getElementById("povprecje");
-    povprecje_text.innerHTML="&nbsp;"+final_izracun;
-    
+    var povprecje_text = document.getElementById("povprecje");
+    povprecje_text.innerHTML = "&nbsp;" + final_izracun;
 }
 
 function refreshPage() {

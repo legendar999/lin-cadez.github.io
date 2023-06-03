@@ -294,6 +294,7 @@ h1 {
   margin-top: 80px;
   position: -webkit-sticky;
   position: sticky;
+  text-align: center;
 }
 
 .arrow a img {

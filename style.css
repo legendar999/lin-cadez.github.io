@@ -3,6 +3,7 @@
 }
 
 * {
+  text-decoration: none;
   box-sizing: border-box;
   border-end-end-radius: 13px;
   border-end-start-radius: 13px;

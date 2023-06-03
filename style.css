@@ -10,9 +10,45 @@
   border-start-start-radius: 13px;
   font-family: 'Montserrat';
   scroll-behavior: smooth;
-  color: #ca6e04;
+  color: #000000;
 }
 
+.wrapper {
+  height: 100vh;
+  color: aliceblue;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 24ch;
+  animation: typing 2s steps(24), blink .8s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid;
+  border-radius: 0%;
+  font-family: monospace;
+  font-size: 2em;
+  color: beige;
+}
+
+.g1a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
 
 body {
   background: -webkit-linear-gradient(left, #682bd7, #5f1ed8, #530cd8);
@@ -89,18 +125,6 @@ body {
 
 body {
   z-index: 0;
-}
-
-.spodaj {
-  position: relative;
-  align-items: center;
-  left: 0;
-  right: 0;
-  text-align: center;
-  color: #FF595A;
-  font-family: monospace;
-  font-size: 2.5vmin;
-  padding-bottom: 10px;
 }
 
 .navbar {
@@ -330,7 +354,7 @@ h1 {
 .content-item:hover {
   cursor: pointer;
   background-color: rgb(157, 132, 197);
-  box-shadow: 10px 10px 20px #000000;
+  box-shadow: 4px 4px 10px #000000;
   transition: 0.3s;
   scale: 1.01;
 }
@@ -411,24 +435,38 @@ h1 {
   .sola-vsebina {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 50px;
-    padding: 20px;
+    grid-gap: 60px;
     margin: 0 auto;
     align-items: center;
     justify-content: space-evenly;
-    width: 80%;
     place-items: center;
+  }
+
+  .content-item {
+    padding: 0;
+    width: 120%;
+    height: 110%;
+  }
+
+  .content-item img {
+    width: 100%;	
+    margin-top: 0;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .content-item a {
+    font-size: 1.2em;
+    margin-top: 40px;
+    margin-bottom: 0;
   }
 
   .music-vsebina {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 50px;
-    padding: 20px;
+    grid-gap: 60px;
     margin: 0 auto;
     align-items: center;
     justify-content: space-evenly;
-    width: 80%;
     place-items: center;
   }
 }

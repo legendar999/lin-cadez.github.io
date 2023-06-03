@@ -10,13 +10,12 @@
   border-start-start-radius: 13px;
   font-family: 'Montserrat';
   scroll-behavior: smooth;
-  color: #000000;
+  color: #f2f2f2;
 }
 
 .wrapper {
   height: 100vh;
-  color: aliceblue;
-  /*This part is important for centering*/
+  color: #f2f2f2;
   display: grid;
   place-items: center;
 }
@@ -30,7 +29,7 @@
   border-radius: 0%;
   font-family: monospace;
   font-size: 2em;
-  color: beige;
+  color: #f2f2f2;
 }
 
 .g1a {
@@ -51,7 +50,7 @@
 }
 
 body {
-  background: -webkit-linear-gradient(left, #682bd7, #5f1ed8, #530cd8);
+  background: #595959;
   font-family: 'Montserrat';
 }
 
@@ -134,7 +133,7 @@ body {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #7f7f7f;
   height: 60px;
   width: 100%;
   position: fixed;
@@ -164,20 +163,19 @@ body {
 }
 
 .navbar ul li:hover {
-  background-color: #682bd7;
+  background-color: #a5a5a5;
   color: #ffffff;
   transition: 0.5s;
-}
+}image.png
 
 .navbar ul li a {
   font-size: 1.2rem;
-  color: #000000;
+  color: #f2f2f2;
   text-decoration: none;
   padding: 10px;
 }
 
 .navbar ul li a:hover {
-  color: rgb(210, 210, 210);
   transition: 0.5s;
 }
 
@@ -200,7 +198,7 @@ body {
 
   .navbar ul li a {
     font-size: 1.2rem;
-    color: #000000;
+    color: #f2f2f2;
     text-decoration: none;
     padding: 10px;
   }
@@ -261,7 +259,7 @@ h1 {
 
   .navbar ul li a {
     font-size: 1.2rem;
-    color: #000000;
+    color: #f2f2f2;
     text-decoration: none;
     padding: 10px;
   }
@@ -338,7 +336,7 @@ h1 {
 }
 
 .content-item {
-  background-color: rgb(255, 255, 255);
+  background-color: #7f7f7f;
   padding: 20px;
   text-align: center;
   font-size: 1.2em;
@@ -346,14 +344,14 @@ h1 {
   text-decoration: none;
   transition: 0.3s;
   margin-top: 20px;
-  box-shadow: 0 0 4px #000000;
+  box-shadow: 2px 2px 4px #000000;
   width: 400px;
   height: 400px;
 }
 
 .content-item:hover {
   cursor: pointer;
-  background-color: rgb(157, 132, 197);
+  background-color: #a5a5a5;
   box-shadow: 4px 4px 10px #000000;
   transition: 0.3s;
   scale: 1.01;
@@ -490,7 +488,7 @@ h1 {
 footer {
   height: 80px;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: #7f7f7f;
   display: inline-flex;
   flex-direction: row;
   align-content: center;

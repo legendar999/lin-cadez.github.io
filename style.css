@@ -380,60 +380,34 @@ footer {
 
 @media screen and (max-width: 600px) {
   .sola-vsebina {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 50px;
     padding: 20px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-evenly;
     width: 80%;
-    place-items: center;
   }
   
   .content-item {
-    background-color: #7f7f7f;
     padding: 10px;
-    text-align: center;
     font-size: 1.2em;
     border-radius: 20px;
-    text-decoration: none;
-    transition: 0.3s;
     margin-top: 20px;
-    box-shadow: 2px 2px 4px #000000;
     width: 300px;
     height: 300px;
   }
   
   .content-item:hover {
-    cursor: pointer;
-    background-color: #a5a5a5;
-    box-shadow: 4px 4px 10px #000000;
-    transition: 0.3s;
     scale: 1.01;
   }
   
   .content-item img {
-    width: 80%;
-    height: 80%;
-    border-radius: 20px;
     margin-top: 10px;
   }
   
   .content-item a {
-    text-decoration: none;
     font-size: 1.4em;
-    font-family: 'Montserrat';
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: 900;
-    font-style: bold;
+
   }
   
-  .content-item a:hover {
-    transition: 0.5s;
-  }
   h1{
     font-size: 1.5rem;
     margin-left: 10px;
